@@ -15,7 +15,6 @@ theirs.
 
 | Path | What it is |
 | --- | --- |
-| `.github/PULL_REQUEST_TEMPLATE.md` | Pre-filled into every pull request that has no repository-specific template. Leads with the title, because merges are squashed and the title becomes the commit message that release tooling reads |
 | `CONTRIBUTING.md` | The conventions that hold across repositories: commit form, what belongs in a comment, where decisions are written down, how secrets are handled, and how an infrastructure change is verified |
 | `SECURITY.md` | How to report a problem privately, and what to do first when a credential has leaked |
 
@@ -29,7 +28,7 @@ repository — a licence because it has to be present when the project is cloned
 `.github/workflows/` of its own repository, which inside this one would mean the path
 `.github/.github/workflows/` — legal, and confusing. More importantly, callers pin a tag to a shared
 workflow, so it needs a release stream of its own. The files here are live on the default branch and
-nobody versions a pull request template.
+nobody versions a contributing guide.
 
 ## Adding to it
 
